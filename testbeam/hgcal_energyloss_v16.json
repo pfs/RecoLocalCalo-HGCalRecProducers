@@ -1,0 +1,23 @@
+{
+  // Source:
+  // https://github.com/cms-sw/cmssw/blob/master/RecoLocalCalo/HGCalRecProducers/python/HGCalRecHit_cfi.py
+  
+  // Energy loss per absorption layer:
+  "dEdx": [
+  
+    // CE-E
+     5.55, 12.86,  9.4,  12.86,  9.4,  12.86,  9.4,  12.86,  9.4,  12.86,
+     9.4,  12.86,  9.4,  12.86,  9.4,  12.86,  9.4,  12.86, 13.54, 12.86,
+    13.54, 12.86, 13.54, 12.86, 13.54, 12.86,
+    
+    // CE-H
+    58.63, 60.7,  60.7,  60.7,  60.7,  60.7,  60.7,  60.7,  60.7,  60.7,
+    60.7,  83.08, 83.08, 83.43, 83.61, 83.61, 83.61, 83.61, 83.61, 83.61,
+    83.61
+  ],
+  
+  // Correction for layer thickness:
+  // CE_E_120um, CE_E_200um, CE_E_300um, CE_H_120um, CE_H_200um, CE_H_300um
+  "SF_thickness_Si": [0.75, 0.76, 0.75, 0.85, 0.85, 0.84],
+  "SF_thickness_SiPM": [0.69]
+}
